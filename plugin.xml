@@ -38,11 +38,11 @@
         <clobbers target="CameraPopoverOptions" />
     </js-module>
 
-
-
     <js-module src="www/Camera.js" name="camera">
         <clobbers target="navigator.camera" />
     </js-module>
+
+    <dependency id="cordova-plugin-compat" url="https://github.com/macdonst/cordova-plugin-compat" />
 
     <!-- firefoxos -->
     <platform name="firefoxos">
@@ -71,7 +71,6 @@
         <source-file src="src/android/CameraLauncher.java" target-dir="src/org/apache/cordova/camera" />
         <source-file src="src/android/FileHelper.java" target-dir="src/org/apache/cordova/camera" />
         <source-file src="src/android/ExifHelper.java" target-dir="src/org/apache/cordova/camera" />
-        <source-file src="src/android/PermissionHelper.java" target-dir="src/org/apache/cordova/camera" />
 
         <js-module src="www/CameraPopoverHandle.js" name="CameraPopoverHandle">
             <clobbers target="CameraPopoverHandle" />
